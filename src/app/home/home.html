@@ -1,0 +1,32 @@
+<div style="padding: 30px; max-width: 900px; margin: 0 auto;">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Bienvenido al sistema de gestión de almacén</mat-card-title>
+            <mat-card-subtitle>Seleccione una opción para comenzar</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+            <mat-form-field apperance="outline" style="width: 100%;">
+                <mat-label>Buscar producto por categoria</mat-label>
+
+                <mat-select (selectionChange)="filtrarPorCategoria($event.value)">
+                    <mat-option value="Todas">Todas</mat-option>
+                    <mat-option value="Ferretería">Ferretería</mat-option>
+                    <mat-option value="Electricidad">Electricidad</mat-option>
+                    <mat-option value="Pintura">Pintura</mat-option>
+                    <mat-option value="Plomería">Plomería</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <app-tabla-productos [lista]="productosEnPantalla"></app-tabla-productos>
+
+
+        </mat-card-content>
+
+    </mat-card>
+
+
+
+
+
+
+</div>

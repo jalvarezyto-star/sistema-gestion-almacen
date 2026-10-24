@@ -1,0 +1,24 @@
+<div style="padding: 40px; display: flex; justify-content: center;">
+  @if (productoSeleccionado) {
+    <mat-card style="width: 100%; max-width: 500px;">
+      <mat-card-header>
+        <mat-card-title>Ficha Técnica: {{ productoSeleccionado.id }}</mat-card-title>
+        <mat-card-subtitle>{{ productoSeleccionado.categoria }}</mat-card-subtitle>
+      </mat-card-header>
+      
+      <mat-divider></mat-divider>
+      
+      <mat-card-content style="padding-top: 20px; font-size: 1.1rem;">
+        <p><strong>Nombre:</strong> {{ productoSeleccionado.nombre }}</p>
+        <p><strong>Stock en Almacén:</strong> {{ productoSeleccionado.stock }} unidades</p>
+      </mat-card-content>
+
+      <mat-card-actions align="end">
+        <button mat-stroked-button color="accent" routerLink="/">⬅ Volver al Almacén</button>
+      </mat-card-actions>
+    </mat-card>
+  } @else {
+    <h2>El producto no existe.</h2>
+    <button mat-raised-button routerLink="/">Volver al inicio</button>
+  }
+</div>
