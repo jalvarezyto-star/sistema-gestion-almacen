@@ -7,11 +7,11 @@ export class ProductoService {
     private productos = [
     { id: 'PROD-001', nombre: 'Martillo de Goma', categoria: 'Ferretería', stock: 45 },
     { id: 'PROD-002', nombre: 'Clavos 2 pulgadas (Caja)', categoria: 'Ferretería', stock: 120 },
-    { id: 'PROD-003', nombre: 'Destornillador Estrella', categoria: 'Ferretería', stock: 34 },
+    { id: 'PROD-003', nombre: 'Destornillador Estrella', categoria: 'Ferretería', stock: 4 },
     { id: 'PROD-004', nombre: 'Llave Inglesa 10"', categoria: 'Ferretería', stock: 15 },
     { id: 'PROD-005', nombre: 'Taladro Percutor', categoria: 'Ferretería', stock: 8 },
-    { id: 'PROD-006', nombre: 'Alicate Universal', categoria: 'Ferretería', stock: 50 },
-    { id: 'PROD-007', nombre: 'Huincha de medir 5m', categoria: 'Ferretería', stock: 75 },
+    { id: 'PROD-006', nombre: 'Alicate Universal', categoria: 'Ferretería', stock: 8 },
+    { id: 'PROD-007', nombre: 'Huincha de medir 5m', categoria: 'Ferretería', stock: 7 },
     { id: 'PROD-008', nombre: 'Sierra Manual', categoria: 'Ferretería', stock: 22 },
     
     { id: 'PROD-009', nombre: 'Cable Mellizo 14 AWG (Rollo)', categoria: 'Electricidad', stock: 30 },
@@ -37,7 +37,9 @@ export class ProductoService {
     { id: 'PROD-027', nombre: 'Cinta Teflón', categoria: 'Plomería', stock: 400 },
     { id: 'PROD-028', nombre: 'Válvula de paso 1/2"', categoria: 'Plomería', stock: 55 },
     { id: 'PROD-029', nombre: 'Trampa para lavadero', categoria: 'Plomería', stock: 30 },
-    { id: 'PROD-030', nombre: 'Manguera flexible agua', categoria: 'Plomería', stock: 85 }
+    { id: 'PROD-030', nombre: 'Manguera flexible agua', categoria: 'Plomería', stock: 85 },
+
+    { id: 'PROD-031', nombre: 'Mesa de estudio', categoria: 'Muebles', stock: 42 }
   ];
 
   obtenerProductos(){
